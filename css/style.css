@@ -946,6 +946,7 @@ li a:hover {
 
 .down {
   flex: 1;
+  margin-right: 50px;
 }
 
 .down p {
