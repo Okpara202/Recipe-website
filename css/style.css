@@ -12,6 +12,10 @@
   font-weight: 500;
 }
 
+p {
+  letter-spacing: -0.02em;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
@@ -22,6 +26,8 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+  line-height: 29.05px;
+  letter-spacing: -0.04em;
 }
 
 .active {
@@ -35,6 +41,30 @@
 h1 {
   font-weight: 600;
   font-size: 3rem;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  line-height: 32px;
+  letter-spacing: -0.04em;
+}
+
+.maintain {
+  height: 70vh;
+  text-align: center;
+  background-image: url(../img/contact\ chef.png);
+  background-repeat: no-repeat;
+}
+
+.maintain h1 {
+  margin-top: 20vh;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.maintain p {
+  margin-top: 20px;
+  font-size: 1.3rem;
 }
 
 hr {
@@ -77,6 +107,7 @@ footer h1 {
   font-weight: 400;
   font-size: 1.5rem;
   width: 200px;
+  letter-spacing: 0;
 }
 
 header h1 span,
@@ -272,6 +303,7 @@ li a:hover {
   border: none;
   border-radius: 1rem;
   transition: all 0.5s;
+  letter-spacing: -0.02em;
 }
 
 .btn i {
@@ -575,8 +607,11 @@ li a:hover {
 
 .section-four h1 {
   font-size: 1.5rem;
-  line-height: 1.2;
   margin-bottom: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.04em;
 }
 
 .section-four-info aside {
@@ -742,7 +777,6 @@ li a:hover {
 .section-six article {
   background-color: white;
   font-family: "Instrument Sans";
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   margin-top: 20px;
   padding-bottom: 8px;
   flex-basis: 30%;
@@ -1025,6 +1059,7 @@ li a:hover {
   font-weight: 500;
   line-height: 64px;
   padding: 30px;
+  letter-spacing: -0.04em;
 }
 
 .parent-box aside:nth-child(1) {
@@ -1044,16 +1079,110 @@ li a:hover {
   letter-spacing: 0.1em;
 }
 
-.media{
+.media {
   text-align: center;
 }
 
-.media i{
+.media i {
   margin-top: 40px;
   font-size: 1rem;
 }
 
+.contact-one {
+  margin-top: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.contact-one aside:nth-child(1) {
+  background: linear-gradient(rgba(231, 249, 253, 0), rgba(231, 249, 253, 1));
+  border-radius: 2rem;
+  flex-basis: 30%;
+}
+
+.contact-one p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-one::placeholder {
+  font-family: Inter;
+  font-size: 0.875;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.contact-one aside:nth-child(1) img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-one form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-one form select {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-one form input,
+.contact-one form select,
+.contact-one form textarea {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 2px gray;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 3vh;
+}
+
+.contact-one form button {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 20px 60px;
+}
+
+.contact-one form textarea {
+  width: 90%;
+  min-height: 20vh;
+  resize: vertical;
+}
+
+.contact-one form label {
+  flex: 1;
+}
+
+.contact-one form input:focus,
+.contact-one form select:focus,
+.contact-one form textarea:focus {
+  outline: 1px solid var(--thick-blue-clr);
+}
+
+.contact-one aside:nth-child(2) {
+  flex-basis: 60%;
+}
+
+.contact-one h6 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.45px;
+  letter-spacing: -0.04em;
+  margin-bottom: 10vh;
+}
+
+.contact-eight {
+  margin: 18vh auto;
+}
 
 .footer {
   display: flex;
@@ -1133,6 +1262,10 @@ footer span {
     display: none;
   }
 
+  .contact-one {
+    display: block;
+  }
+
   .instagram-post {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1187,6 +1320,18 @@ footer span {
     transition: all 0.5s;
   }
 
+  .contact-one form div {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contact-one form input,
+  .contact-one form select,
+  .contact-one form textarea {
+    width: 100%;
+  }
+
   .blog-section-three .parent-box {
     display: block;
   }
@@ -1215,6 +1360,11 @@ footer span {
 
   nav ul li a {
     color: white;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
   }
 
   nav ul li a:hover {
