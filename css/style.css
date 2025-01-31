@@ -51,14 +51,16 @@ h2 {
 
 .maintain {
   height: 70vh;
+  margin-bottom: 20vh;
   text-align: center;
   background-image: url(../img/contact\ chef.png);
   background-repeat: no-repeat;
+  margin-top: 10vh;
+  color: var(--thick-blue-clr);
 }
 
 .maintain h1 {
   margin-top: 20vh;
-  color: red;
   margin-bottom: 10px;
 }
 
@@ -68,7 +70,7 @@ h2 {
 }
 
 hr {
-  border: 1px solid rgba(126, 125, 125, 0.1);
+  border: 1px solid rgb(201, 200, 200);
 }
 
 header {
@@ -86,7 +88,7 @@ header {
   color: white;
   font-size: 2rem;
   position: relative;
-  right: -120px;
+  left: 70%
 }
 
 #x:hover {
@@ -554,7 +556,7 @@ li a:hover {
 .section-four img {
   aspect-ratio: 1/1;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-bottom: 10px;
 }
 
@@ -562,8 +564,7 @@ li a:hover {
   flex-basis: 30%;
   background: linear-gradient(rgba(231, 249, 253, 0), rgba(231, 249, 253, 1));
   padding: 5px 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 30px;
   margin-bottom: 40px;
   transition: all 1.5s;
 }
@@ -608,6 +609,7 @@ li a:hover {
   aspect-ratio: 1/1;
   height: 100%;
 }
+
 
 .section-four-info .fa-solid {
   color: black;
@@ -1243,17 +1245,12 @@ li a:hover {
 }
 
 .footer-hr {
-  border: 1px solid rgb(201, 200, 200);
   margin: 30px auto 30px;
 }
 
 .footer ul li {
   margin-left: 50px;
   line-height: 1.5;
-}
-
-.footer hr {
-  border: 3px solid red;
 }
 
 .down-foot {
@@ -1339,18 +1336,15 @@ footer span {
 @media (max-width: 700px) {
   nav ul {
     display: none;
-    position: absolute;
+    position: fixed;
     top: -1000px;
-    right: -300px;
     background-color: black;
     height: 100vh;
-    padding: 30px;
+    padding: 30px 0 30px 50px;
     z-index: 99999;
-    transition: all 0.5s;
     opacity: 0.8;
+    width: 50%;
   }
-
-
 
   .contact-one form div {
     display: block;
@@ -1384,13 +1378,15 @@ footer span {
     margin-top: 10vh;
   }
 
-  .section-form input{
+  .section-form input {
     width: 100%;
   }
 
   nav ul.show {
     top: 0;
     display: block;
+    right: 0;
+
   }
 
   nav ul li {
