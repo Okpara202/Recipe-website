@@ -67,6 +67,8 @@ h2 {
 .maintain p {
   margin-top: 20px;
   font-size: 1.3rem;
+  color: var(--red);
+  font-weight: 600;
 }
 
 hr {
