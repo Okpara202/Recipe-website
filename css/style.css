@@ -318,8 +318,9 @@ li a:hover {
 }
 
 .btn:hover {
-  color: var(--red);
-  border-radius: 0;
+  background-color: brown;
+  color: white;
+  font-weight: 900;
 }
 
 .hero-logo {
@@ -390,6 +391,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 1.5s;
 }
 
 .category-one:hover,
@@ -421,6 +423,7 @@ li a:hover {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  transition: all 1s;
 }
 .category-two img {
   position: absolute;
@@ -442,6 +445,7 @@ li a:hover {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  transition: all 1s;
 }
 .category-three img {
   position: absolute;
@@ -463,6 +467,7 @@ li a:hover {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  transition: all 1s;
 }
 
 .category-four img {
@@ -485,6 +490,7 @@ li a:hover {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  transition: all 1s;
 }
 
 .category-five img {
@@ -507,6 +513,7 @@ li a:hover {
   justify-content: center;
   position: relative;
   margin-left: 50px;
+  transition: all 1s;
 }
 
 .category-six img {
@@ -558,6 +565,7 @@ li a:hover {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-bottom: 40px;
+  transition: all 1.5s;
 }
 
 .section-four div:hover {
@@ -813,6 +821,10 @@ li a:hover {
 
 .section-seven {
   margin-top: 15vh;
+}
+
+.section-seven article {
+  transition: all 1.5s;
 }
 
 .section-seven article:hover {
@@ -1184,6 +1196,24 @@ li a:hover {
   margin: 18vh auto;
 }
 
+#back-to-top {
+  position: fixed;
+  font-size: 1.5rem;
+  bottom: 50px;
+  color: white;
+  background-color: #4CAF50;
+  padding: 10px;
+  z-index: 99999999999;
+  border-radius: 50%;
+  right: 30px;
+  transition: padding 1s;
+  display: none;
+}
+
+#back-to-top:hover {
+  background-color: #2e8e41;
+}
+
 .footer {
   display: flex;
   align-items: flex-end;
@@ -1201,7 +1231,6 @@ li a:hover {
 .footer ul {
   display: flex;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .footer aside {
@@ -1307,7 +1336,7 @@ footer span {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   nav ul {
     display: none;
     position: absolute;
@@ -1318,12 +1347,19 @@ footer span {
     padding: 30px;
     z-index: 99999;
     transition: all 0.5s;
+    opacity: 0.8;
   }
+
+
 
   .contact-one form div {
     display: block;
     margin: 0 auto;
     width: 100%;
+  }
+
+  article {
+    margin-bottom: 20px;
   }
 
   .contact-one form input,
@@ -1346,6 +1382,10 @@ footer span {
 
   .section-form {
     margin-top: 10vh;
+  }
+
+  .section-form input{
+    width: 100%;
   }
 
   nav ul.show {
@@ -1388,6 +1428,23 @@ footer span {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 30px;
+  }
+
+  .footer-social {
+    width: 80px;
+  }
+
+  .down-foot p {
+    font-size: 1rem;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer ul li {
+    margin-top: 10px;
   }
 }
 
